@@ -20,4 +20,6 @@ class CourseAdmin(admin.ModelAdmin):
     search_fields = ['title', 'overview']
     prepopulated_fields = {'slug': ('title', )}
     inlines = [ModuleInline]
-    
+
+from django.contrib import admin
+admin.site.index_template = 'memcache_status/admin_index.html'
