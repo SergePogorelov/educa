@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+educa/files/
+educa/image/
+educa/media/
