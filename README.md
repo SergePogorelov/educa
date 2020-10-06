@@ -32,4 +32,4 @@
 - [Django REST framework](https://www.django-rest-framework.org/)
 - [Memcached](https://www.memcached.org/)
 
-_По книге [Антонио Меле: Django 2 в примерах](https://www.labirint.ru/books/698238/)_
+_По книге [Антонио Меле: Django 2 в примерах](https://dmkpress.com/catalog/computer/programming/python/978-5-97060-746-6/)_
