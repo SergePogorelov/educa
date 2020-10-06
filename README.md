@@ -1,8 +1,6 @@
 # Educa
 Платформа для онлайн-обучения с собственной системой управления содержимым (Content Management System, CMS).
 
-_По книге [Антонио Меле: Django 2 в примерах](https://www.labirint.ru/books/698238/)_
-
 ### Основной функционал:
 - регистрация на платформе обучения как студент или как преподаватель;
 - для преводавателей доступно добавление своих курсов и разделение их на модули;
@@ -33,3 +31,5 @@ _По книге [Антонио Меле: Django 2 в примерах](https:/
 - [Django](https://www.djangoproject.com/)
 - [Django REST framework](https://www.django-rest-framework.org/)
 - [Memcached](https://www.memcached.org/)
+
+_По книге [Антонио Меле: Django 2 в примерах](https://www.labirint.ru/books/698238/)_
