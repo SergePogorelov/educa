@@ -4,10 +4,9 @@ from ..models import Subject, Course, Module, User, Content
 
 
 class SubjectSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Subject
-        fields = ['id', 'title', 'slug']
+        fields = ["id", "title", "slug"]
 
 
 class ModuleSerializer(serializers.ModelSerializer):
@@ -16,14 +15,13 @@ class ModuleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Module
-        fields = ['order', 'title', 'description', 'course']
+        fields = ["order", "title", "description", "course"]
 
 
 class StudentSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = User
-        fields = ['username', 'first_name', 'last_name' ]
+        fields = ["username", "first_name", "last_name"]
 
 
 class CourseSerializer(serializers.ModelSerializer):
@@ -33,11 +31,20 @@ class CourseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Course
-        fields = ['id', 'subject', 'title', 'slug', 'overviev', 'created', 'owner', 'modules', 'students']
+        fields = [
+            "id",
+            "subject",
+            "title",
+            "slug",
+            "overviev",
+            "created",
+            "owner",
+            "modules",
+            "students",
+        ]
 
 
 class ItemReletedFields(serializers.RelatedField):
-
     def to_representation(self, value):
         return value.render()
 
@@ -48,7 +55,7 @@ class ContentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Content
-        fields = ['order', 'item']
+        fields = ["order", "item"]
 
 
 class ModuleWithContentsSerializer(serializers.ModelSerializer):
@@ -57,7 +64,7 @@ class ModuleWithContentsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Module
-        fields = ['order', 'title', 'description', 'contents']
+        fields = ["order", "title", "description", "contents"]
 
 
 class CourseWithContentsSerializer(serializers.ModelSerializer):
@@ -66,4 +73,14 @@ class CourseWithContentsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Course
-        fields = ['id', 'subject', 'title', 'slug', 'overviev', 'created', 'owner', 'modules', 'students']
+        fields = [
+            "id",
+            "subject",
+            "title",
+            "slug",
+            "overviev",
+            "created",
+            "owner",
+            "modules",
+            "students",
+        ]

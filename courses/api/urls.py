@@ -6,12 +6,12 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register('courses', views.CourseViewSet)
-router.register('subjects', views.SubjectViewSet)
-router.register('modeles', views.ModuleViewSet)
+router.register("courses", views.CourseViewSet)
+router.register("subjects", views.SubjectViewSet)
+router.register("modeles", views.ModuleViewSet)
 
 
-app_name = 'courses'
+app_name = "courses"
 
 urlpatterns = [
     # path("courses/<pk>/enroll/", views.CourseEnrollView.as_view(), name="course_enroll"),

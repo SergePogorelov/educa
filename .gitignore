@@ -131,3 +131,5 @@ dmypy.json
 educa/files/
 educa/image/
 educa/media/
+
+.vscode/
